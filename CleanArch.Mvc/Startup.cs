@@ -27,7 +27,7 @@ namespace CleanArch.Mvc
             services.AddDbContext<UniversityDbContext>(options =>options.UseSqlServer(Configuration.GetConnectionString("UniversityDB")));
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddControllersWithViews();
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddRazorPages();
 
             RegisterServices(services);
