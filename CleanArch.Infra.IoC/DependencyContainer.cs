@@ -1,6 +1,6 @@
 ﻿using CleanArch.Application.Interfaces;
 using CleanArch.Application.Services;
-using CleanArch.Domain.ComandHandlers;
+using CleanArch.Domain.CommandHandlers;
 using CleanArch.Domain.Commands;
 using CleanArch.Domain.Core.Bus;
 using CleanArch.Domain.Interfaces;

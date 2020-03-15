@@ -1,15 +1,21 @@
 ﻿@model CleanArch.Application.ViewModels.CourseViewModel
 
 <div class="container">
-    <div class="card-columns">
+    <div class="row">
         @foreach (var course in Model.Courses)
         {
-            <div class="card" style="width: 18rem;">
-                <img src="@course.ImageUrl" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <span class="card-title">@course.Name</span>
-                    @*<p class="card-text">@course.Description</p>*@
-                    @*<a href="#" class="btn btn-primary">Go somewhere</a>*@
+            <div class="card mb-3 col-12" >
+                <div class="row no-gutters">
+                    <div class="col-md-2">
+                        <img src="@course.ImageUrl" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-10">
+                        <div class="card-body">
+                            <h5 class="card-title">@course.Name</h5>
+                            <p class="card-text">@course.Description</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         }

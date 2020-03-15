@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using CleanArch.Domain.Entities;
 
-namespace CleanArch.Domain.ComandHandlers
+namespace CleanArch.Domain.CommandHandlers
 {
     public class CourseCommandHandler : IRequestHandler<CreateCourseCommand, bool>
     {
