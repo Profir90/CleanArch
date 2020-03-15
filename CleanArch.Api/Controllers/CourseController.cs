@@ -18,8 +18,7 @@ namespace CleanArch.Api.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            CourseViewModel model = _courseService.GetAll();
-            return Ok(model);
+            return Ok(_courseService.GetAll());
         }
 
         [HttpPost]

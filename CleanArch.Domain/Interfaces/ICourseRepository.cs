@@ -1,12 +1,11 @@
 ﻿using CleanArch.Domain.Entities;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using System.Linq;
 
 namespace CleanArch.Domain.Interfaces
 {
     public interface ICourseRepository
     {
-        IEnumerable<Course> GetAll();
+        IQueryable<Course> GetAll();
         void Add(Course course);
     }
 }

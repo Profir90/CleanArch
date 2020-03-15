@@ -1,7 +1,7 @@
 ﻿using CleanArch.Domain.Entities;
 using CleanArch.Domain.Interfaces;
 using CleanArch.Infra.Data.Context;
-using System.Collections.Generic;
+using System.Linq;
 
 namespace CleanArch.Infra.Data.Repository
 {
@@ -14,7 +14,7 @@ namespace CleanArch.Infra.Data.Repository
             _dbContext = dbContext;
         }
 
-        public IEnumerable<Course> GetAll()
+        public IQueryable<Course> GetAll()
         {
             return _dbContext.Courses;
         }

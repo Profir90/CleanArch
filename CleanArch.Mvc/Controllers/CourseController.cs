@@ -20,8 +20,7 @@ namespace CleanArch.Mvc.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            CourseViewModel model = _courseService.GetAll();
-            return View(model);
+            return View(_courseService.GetAll());
         }
     }
 }
